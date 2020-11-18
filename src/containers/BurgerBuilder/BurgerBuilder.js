@@ -104,7 +104,7 @@ class BurgerBuilder extends Component {
     return (
       <Fragment>
        <Modal show={this.state.purchasing} clicked={this.closemodal}>
-        <OrderSummary ingredients={this.state.ingredients} cancel={this.closemodal} continue={this.purchaseContinue}/>
+        <OrderSummary price={this.state.totalPrice} ingredients={this.state.ingredients} cancel={this.closemodal} continue={this.purchaseContinue}/>
       </Modal>
       
         <Burger ingredients={this.state.ingredients} />
